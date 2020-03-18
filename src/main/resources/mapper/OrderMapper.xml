@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.softsun.demo.dao.OrderMapper">
+    <select id = "selectSingleRow" resultType="com.softsun.demo.pojo.OrderBean">
+  select ooha.order_number from Oe_Order_Headers_All ooha Where 1=1 And rownum = 1
+ </select>
+</mapper>
